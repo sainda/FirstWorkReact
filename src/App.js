@@ -1,24 +1,20 @@
 import logo from './logo.svg';
+import image from './Image.png';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <form>
+        <div class="id">
+           <img src={image} alt="image" />
+        </div>
+        <div>
+             <h3>Blog post published</h3>
+             <p>This blog post has been published. Team members will be able to edit this post and republish changes.</p>
+             <input type="button" value="Cancel" id="cancel" />
+             <input type="button" value="Confirm" id="confirm" />
+        </div>
+    </form>
   );
 }
 
